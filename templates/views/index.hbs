@@ -1,0 +1,79 @@
+<!--Visual Studio has built-in support for handlebars;  .hbs is handlebar file (basically an html file w/ some additional features
+        that allows for dynamic content) -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cover Letter Generator</title>
+        <!---link rel="icon" href="/img/weather.png"--->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css">  
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="content_page" class="content container main-content88">
+	         <h1 class="web_title"><b>Cover Letter Simulator - Results</b><br><br></h1>
+            <span id="hidetitle"><input type="hidden" name="hidetitle" value="page1"></span>
+
+            <div id="letter_results" class="col-md-10 offset-md-1 col-sm-12">	
+               <div class="letter_text">
+               <p>Dear Hiring Manager,</p>
+               <p>I am writing to apply for the position of <span class="entry00 job01">{{currWords.job01}}</span>.  
+                  Your company has a reputation for being both 
+                  <span class="entry00 adj01">{{currWords.adj01}} </span> and 
+                  <span class="entry00 adj02">{{currWords.adj02}}</span>, and I would very much like 
+                  to work for a company like that.  I am confident that my skills are 
+                  well-aligned with the role, and that I would be <span class="indicator1">{{currWords.indicator1}} </span> 
+                  <span class="entry00 adj03">{{currWords.adj03}} </span> 
+                  fit for your organization.
+               </p>
+               <p>My previous employers would describe me as <span class="entry00 adj04">
+                  {{currWords.adj04}}</span>, and I believe my knowledge of 
+                  <span class="entry00 noun01">{{currWords.nounplural01}} </span> would make me 
+                  <span class="indicator2">{{currWords.indicator2}}</span>
+                  <span class="entry00 adj05">{{currWords.adj05}} </span> addition to the 
+                  Acme Industries workforce.
+               </p>  
+               <p>I have been frequently recognized for my <span class="entry00 noun02">
+                  {{currWords.noun01}} </span> and have been <span class="indicator3">{{currWords.indicator3}}</span>
+                  <span class="entry00 adj06">{{currWords.adj06}} </span> participant in many 
+                  <span class="entry00 adj07">{{currWords.adj07}} </span> projects.  
+                  I am eager to take my <span class="entry00 verb01">{{currWords.verb01}} 
+                  </span> skills to the next level and to do so as part of a winning team.
+               </p>
+               <p>I believe my proven track record make me <span class="indicator4">{{currWords.indicator4}}</span>
+                  <span class="entry00 adj08">{{currWords.adj08}} </span> fit for 
+                  this opportunity.  I have enclosed my <span class="entry00 noun03">
+                  {{currWords.nounitem01}} </span> for your consideration, and I look forward to 
+                  hearing from you.  
+               </p>
+               <p>Sincerely, </p>
+               <p>-- your name here</p>
+               </div>
+            </div>
+		
+            <!--div class="bottom_btns">
+               <form class="bottom_form col-md-4 offset-md-2 col-sm-12" action="madlib_sim.php?random_ind=true" method="post">
+                  <div id="buttons2">
+                     <input type="submit" value="Random"/> 
+                  </div>
+               </form>
+               <p class="bottom_link col-md-3 offset-md-1 col-sm-12"><a href="madlib.php">Letter Simulator Home</a></p> 
+            </div--->
+            <form action="./random" method="post">
+               <div id="buttons" class="col-md-8 offset-md-2 col-sm-11 mt-3">
+                  <label>&nbsp;</label>
+                  <input id="start" type="submit" name="action" value="Random"/>
+                  <p id="homelink"><a href="./">Start Over</a>
+                  <br />
+               </div>
+               
+            </form>                            
+        </div>
+       
+        <script src="/js/index.js"></script>  <!--- moved to end so that this doesn't run until all our elements are available -->
+    </body>
+</html> 
