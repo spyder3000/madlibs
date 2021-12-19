@@ -110,24 +110,30 @@ No media query since this is the default in Bootstrap */
    #letter_results { background-color: blue; }
    div.letter_text {
       margin: 1rem 1rem; 
+      position: relative; 
    }
    #letter_results {            /*  Styles specific to the Letter Simulator php page */
       padding: 5px 15px;	 
       height88: 70vh;
-      height: 41rem;
+      height87: 41rem;
+      height: auto; 
   }
 }
 
 /* Medium (md) devices (tablets, 768px and up) */
-@media (min-width: 868px) { 
-   #letter_results { background-color: red; }
+@media (min-width: 768px) { 
+   #letter_results88 { background-color: red; }
+   #letter_results {background: #efefef; }
    div.letter_text {
       margin: 1rem 1rem; 
+      position: relative; 
    }
+
    #letter_results {            /*  Styles specific to the Letter Simulator php page */
       padding: 5px 10px;	 
       height88: 66vh;
-      height: 39rem;
+      height87: 39rem;
+      height: auto;
       font-size88: 125%; 
   }
  }
