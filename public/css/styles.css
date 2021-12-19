@@ -94,7 +94,7 @@ div.letter_text {
 No media query since this is the default in Bootstrap */
 
 @media88 (min-width: 1px) { 
-   #letter_results { background-color: aqua; }
+   #letter_results88 { background-color: aqua; }
    div.letter_text {
       margin: 1rem 1rem; 
    }
@@ -110,7 +110,7 @@ No media query since this is the default in Bootstrap */
    #content_page { width: 100%; }
    .container { max-width: 100%; }
    
-   #letter_results { background-color: blue; }
+   #letter_results88 { background-color: blue; }
    div.letter_text {
       margin: 1rem 1rem; 
       position: relative; 
@@ -129,7 +129,7 @@ No media query since this is the default in Bootstrap */
    #content_page { width: 100%; }
    .container { max-width: 100%; }
    #letter_results88 { background-color: red; }
-   #letter_results {background: #efefef; }
+   #letter_results87 {background: #efefef; }
    div.letter_text {
       margin: 1rem 1rem; 
       position: relative; 
@@ -167,7 +167,7 @@ No media query since this is the default in Bootstrap */
 @media (min-width: 992px) { 
    #content_page { width: auto; }
    .container { max-width: 960px; }
-   #letter_results { background-color: green; }
+   #letter_results88 { background-color: green; }
    div.letter_text {
       margin: 1.2rem 2.0rem; 
    }
@@ -195,14 +195,13 @@ No media query since this is the default in Bootstrap */
       margin-top: 1rem;
       font-size: 1.2rem;
    }
-
 }
 
 /* Extra (xl) large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
    #content_page { width: auto; }
    .container { max-width: 1140px; }
-   #letter_results { background-color: yellow; }
+   #letter_results88 { background-color: yellow; }
    div.letter_text {
       margin: 2.3rem 3.3rem; 
    }
