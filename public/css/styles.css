@@ -100,7 +100,8 @@ No media query since this is the default in Bootstrap */
    }
    #letter_results {            /*  Styles specific to the Letter Simulator php page */
       padding: 5px 15px;	 
-      height: 80vh;
+      height88: 80vh;
+      height: 47rem;
   }
 }
 
@@ -112,7 +113,8 @@ No media query since this is the default in Bootstrap */
    }
    #letter_results {            /*  Styles specific to the Letter Simulator php page */
       padding: 5px 15px;	 
-      height: 70vh;
+      height88: 70vh;
+      height: 41rem;
   }
 }
 
@@ -124,7 +126,8 @@ No media query since this is the default in Bootstrap */
    }
    #letter_results {            /*  Styles specific to the Letter Simulator php page */
       padding: 5px 20px;	 
-      height: 66vh;
+      height88: 66vh;
+      height: 39rem;
   }
  }
 
@@ -132,11 +135,12 @@ No media query since this is the default in Bootstrap */
 @media (min-width: 992px) { 
    #letter_results { background-color: green; }
    div.letter_text {
-      margin: 1.5rem 2.5rem; 
+      margin: 1.2rem 2.0rem; 
    }
    #letter_results {            /*  Styles specific to the Letter Simulator php page */
       padding: 5px 20px;	 
-      height: 58vh;
+      height88: 61vh;
+      height: 36rem;
    }
 }
 
@@ -148,7 +152,8 @@ No media query since this is the default in Bootstrap */
    }
    #letter_results {            /*  Styles specific to the Letter Simulator php page */
       padding: 5px 20px;	 
-      height: 55vh;
+      height88: 55vh;
+      height: 33rem;
    }
 }
 
