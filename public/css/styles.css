@@ -130,14 +130,14 @@ No media query since this is the default in Bootstrap */
 
 /* Large (lg) devices (desktops, 992px and up)  */
 @media (min-width: 992px) { 
-	div.custom-nouns88 input { 
-		margin-right: 1em; 
-	}
    #letter_results { background-color: green; }
    div.letter_text {
       margin: 1.5rem 2.5rem; 
    }
-
+   #letter_results {            /*  Styles specific to the Letter Simulator php page */
+      padding: 5px 20px;	 
+      height: 58vh;
+   }
 }
 
 /* Extra (xl) large devices (large desktops, 1200px and up) */
@@ -145,6 +145,10 @@ No media query since this is the default in Bootstrap */
    #letter_results { background-color: yellow; }
    div.letter_text {
       margin: 2.3rem 3.3rem; 
+   }
+   #letter_results {            /*  Styles specific to the Letter Simulator php page */
+      padding: 5px 20px;	 
+      height: 55vh;
    }
 }
 
