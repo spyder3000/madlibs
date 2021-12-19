@@ -107,6 +107,9 @@ No media query since this is the default in Bootstrap */
 
 /* Small (sm) devices (landscape phones, 576px and up)  */
 @media (min-width: 576px) { 
+   #content_page { width: 100%; }
+   .container { max-width: 100%; }
+   
    #letter_results { background-color: blue; }
    div.letter_text {
       margin: 1rem 1rem; 
@@ -122,6 +125,8 @@ No media query since this is the default in Bootstrap */
 
 /* Medium (md) devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+   #content_page { width: 100%; }
+   .container { max-width: 100%; }
    #letter_results88 { background-color: red; }
    #letter_results {background: #efefef; }
    div.letter_text {
