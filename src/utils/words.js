@@ -134,7 +134,8 @@ const Words = class {
          "gutter-cleaning", "lawn-mowing", "sabotaging", "delegating", "jump-roping", "karate", "butt-kissing",
          "journalism", "car washing", "jousting", "investigative", "debate", "improv", "babysitting", 
          "song writing", "power napping", "fingerpainting", "haircutting", "analytic", "massage", 
-         "backstabbing", "collaborating", "field goal kicking"
+         "backstabbing", "collaborating", "field goal kicking", "seduction", "showering", "popcorn making", 
+         "breakdancing", "poetry", "coffee drinking"
       ]; 
 
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
