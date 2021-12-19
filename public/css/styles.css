@@ -120,6 +120,7 @@ No media query since this is the default in Bootstrap */
       height88: 70vh;
       height87: 41rem;
       height: auto; 
+      font-size: 1.4rem;
   }
 }
 
@@ -139,7 +140,7 @@ No media query since this is the default in Bootstrap */
       height88: 66vh;
       height87: 39rem;
       height: auto;
-      font-size88: 125%; 
+      font-size: 1.4rem; 
   }
  }
 
