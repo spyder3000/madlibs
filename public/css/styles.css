@@ -119,15 +119,16 @@ No media query since this is the default in Bootstrap */
 }
 
 /* Medium (md) devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 868px) { 
    #letter_results { background-color: red; }
    div.letter_text {
       margin: 1rem 1rem; 
    }
    #letter_results {            /*  Styles specific to the Letter Simulator php page */
-      padding: 5px 20px;	 
+      padding: 5px 10px;	 
       height88: 66vh;
       height: 39rem;
+      font-size88: 125%; 
   }
  }
 
