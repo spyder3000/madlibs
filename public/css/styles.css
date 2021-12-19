@@ -140,8 +140,33 @@ No media query since this is the default in Bootstrap */
       height88: 66vh;
       height87: 39rem;
       height: auto;
-      font-size: 1.8rem; 
+      font-size: 2.3rem; 
   }
+   #buttons input {    /* alignment for text boxes and dropdown boxes */
+      margin-bottom: 0.5em;
+      margin-top: 1em; 
+      border: 2px solid #333;
+      border-radius: 0.3em; 
+      width: 10em; 
+      padding: 1rem;
+      font-size: 2.5rem;
+   }
+
+   #randombutton { 
+      display: inline; 
+      float88: left; 
+      float: none;
+      clear: both;	
+   }
+   #homelink {
+      display: inline;  
+      margin-left: 5rem; 
+      float88: right;
+      float: none; 
+      margin-top: 1rem;
+      font-size: 2.5rem;
+   }
+
  }
 
 /* Large (lg) devices (desktops, 992px and up)  */
