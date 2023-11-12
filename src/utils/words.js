@@ -107,20 +107,26 @@ const Words = class {
 
    // getJobWord -- this function returns a single value for job position & excludes certain values. 
    function getJobWord(excludeList) {
-      const joblist = ["computer programmer", "astronaut", "truck driver", "plumber", 
-            "horse-whisperer", "rock collector", "accountant", "engineer", "exotic dancer", 
-            "waitress", "administrative assistant", "personal shopper", "rodeo clown", 
-            "state senator", "news anchor", "massage therapist", "internet sales", 
-            "football coach", "explorer", "journalist", "business analyst", "garbage collector", 
-            "lead singer", "shopping greeter", "Santa Claus", "fashion model", "CEO", 
-            "underwear model", "airline pilot", "security guard", "haircut person", 
-            "accountant", "warehouse manager", "food taster", "bartender", 
-            "nuclear engineer", "doctor", "voice coach", "bathroom attendant", "pastry chef", 
-            "financial planner", "dog sitter", "civil engineer", "nurse", 
-            "kindergarten teacher", "playwright", "lounge singer", "court jester", 
-            "research scientist", "pharmacist"
+      const joblist = [
+         'accountant',   'acting understudy',    'administrative assistant',  'airline pilot',
+         'astronaut',      'bartender',   'bathroom attendant',  'bodyguard', 
+         'business analyst',    'CEO',  'civil engineer', 'clown', 
+         'computer programmer',  'court jester',  'doctor',
+         'dog walker',      'engineer',    'exotic dancer',
+         'explorer',     'fashion model',   'financial planner',
+         'food taster',     'football coach',     'garbage collector', 'gardner', 
+         'haircut person',   'handyman',  'horse-whisperer', 'influencer', 
+         'journalist',  'kindergarten teacher', 'lead singer',  'lifeguard', 
+         'lounge singer',   'mascot',  'massage therapist',  'motivational speaker',  'news anchor',
+         'nuclear engineer',    'nurse',   'office snitch',   'pastry chef',
+         'personal shopper',   'pharmacist',   'playwright',
+         'plumber',    'policeman', 'research scientist',   'rock collector',
+         'rodeo clown',     'Santa Claus',     'security guard',
+         'shopping greeter',    'state senator',    'test subject',  'truck driver',
+         'underwear model',   'voice coach',   'waitress',
+         'warehouse manager', 'zookeeper'
          ]; 
-
+      
       let modJoblist = joblist.filter(item => !excludeList.includes(item)); 
       console.log('modJoblist.length = ' + modJoblist.length);  
       return modJoblist[Math.floor(Math.random() * modJoblist.length)];             
@@ -128,16 +134,29 @@ const Words = class {
 
    // getVerbWord -- this function returns a single value for job position & excludes certain values. 
    function getVerbWord(excludeList) {
-      const initlist = ["programming", "loitering", "chainsaw-juggling", "binge-drinking", "acrobatic", 
-         "mud wrestling", "town-crying", "cursing", "marketing", "tap-dancing", "nail-clipping", "management", 
-         "yodeling", "skydiving", "bull-riding", "rock-throwing", "embezzling", "power-napping", "dog-sitting", 
-         "gutter-cleaning", "lawn-mowing", "sabotaging", "delegating", "jump-roping", "karate", "butt-kissing",
-         "journalism", "car washing", "jousting", "investigative", "debate", "improv", "babysitting", 
-         "song writing", "power napping", "fingerpainting", "haircutting", "analytic", "massage", 
-         "backstabbing", "collaborating", "field goal kicking", "seduction", "showering", "popcorn making", 
-         "breakdancing", "poetry", "coffee drinking"
+      const initlist = [
+            'acrobatic', 'analytical', 'babysitting',
+            'backstabbing',      'binge-drinking',  'breakdancing',
+            'bull-riding',       'bullying', 'butt-kissing',    'car washing',
+            'childcare',   'coffee drinking',
+            'collaborating', 'coworker blaming', 
+            'cursing',           'debate',          'delegating',
+            'dog-sitting',       'embezzling',      'excuse-making',  'field goal kicking',
+            'fingerpainting', 'flirting', 'floor mopping',  'flyswatting', 'gossiping', 
+            'gutter-cleaning', 'haircutting', 'imaginary', 
+            'improv',            'investigative',   'journalism',
+            'jousting',          'jump-roping',     'juggling',  'karate',
+            'lawn-mowing',       'leadership',  'loitering',      'lunch stealing',  'management',
+            'manure shoveling',  'marketing',         'massage',         'mud wrestling',
+            'nail-clipping',     'poetry',          'poker playing', 'popcorn making',
+            'power napping',     'programming',
+            'rock-throwing',     'sabotaging',      'seduction',
+            'shoe-tying',         'skydiving',       'song writing',
+            'tap-dancing',   'town-crying',    'truth-telling',
+            'ventriloquist',   'work doing',   'yodeling'
       ]; 
-
+      // console.log(initlist.sort());
+      
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
       console.log('modInitlist.length = ' + modInitlist.length);  
       return modInitlist[Math.floor(Math.random() * modInitlist.length)];             
@@ -145,21 +164,34 @@ const Words = class {
 
    // getAdjWord -- this function returns a single value for job position & excludes certain values. 
    function getAdjWord(excludeList) {
-      const initlist = ["ridiculous", "crazy", "sexy", "criminal", "polygamous", "outdated", "humongous", 
-      "asinine", "worthless", "overblown", "uptight", "colorful", "uncomfortable", "hopeless", "repulsive", 
-		"brilliant", "senile", "misguided", "clumsy", "horrible", "delicious", "hilarious", "unhealthy", 
-      "cheerful", "clueless", "purple", "groundbreaking", "terrifying", "cowardly", "tasteless", 
-      "disease-ridden", "offensive", "maniacal", "sober", "decisive", "powerful", "evil", "flamboyant", 
-      "articulate", "photogenic", "unhappy", "misinformed", "calculating", "fierce", "loyal", 
-		"sedated", "loud", "overbearing", "useless", "wealthy", "money-grubbing", "parasitic", "annoying", 
-      "invisible", "fabulous", "magical", "helpful", "imaginary", "glamorous", "ugly", "awesome", 
-      "outrageous", "insincere", "unconscious", "disgusting", "popular", "twisted", "ill-fated", "dim-witted", 
-      "prosperous", "despicable", "triumphant", "tolerable", "irresponsible", "tear-filled", "talentless", 
-      "time wasting", "underwhelming", "sober", "tolerant", "pancake-flavored", "unoriginal", 
-      "overweight", "scrawny", "bug-eyed", "maniacal", "sleepy", "boring", "pleasant", "artificial", 
-      "explosive", "sickly", "awesome", "awe-inspiring", "insipid", "birdbrained"
-   ]; 
-
+      const initlist = [ 'annoying',      'articulate',       'artificial',     'asinine',
+            'awe-inspiring', 'awesome',          'awesome',        'birdbrained',
+            'boring',        'brilliant',        'bug-eyed',       'bungling', 'calculating',
+            'cheerful',      'clueless',         'clumsy',         'colorful', 'comical', 
+            'cowardly',      'crazy',            'criminal',       'decisive',
+            'delicious',     'despicable',       'dim-witted',     'disease-ridden',
+            'disgusting', 'dramatic', 'evil', 'excellent',
+            'explosive', 'fabulous',
+         'fierce', 'flamboyant', 'glamorous',
+         'great', 'groundbreaking', 'hard-working', 
+            'helpful',       'hilarious',        'hopeless',       'horrible',
+            'humongous',     'ill-fated',        'imaginary',      'innovative', 'insincere',
+            'insipid',       'invisible',        'irresponsible',  'loud',
+            'loyal',         'magical',          'maniacal',       'maniacal',
+            'misguided',     'misinformed',      'money-grubbing', 'nauseating', 'offensive',
+            'outdated',      'outrageous',       'overbearing',    'overblown',
+            'overweight',    'pancake-flavored', 'parasitic',      'pathetic', 'people-pleasing', 'photogenic',
+            'pleasant',      'polygamous',       'popular',        'powerful',
+            'prosperous',    'purple',           'repulsive',      'ridiculous', 'ruthless', 
+            'scrawny',       'sedated',          'senile',         'sexy',
+            'sickly',        'sleepy',           'sober',          'sober',  'stupid',  'successful', 
+            'talentless',    'tasteless',        'tear-filled',    'terrifying',
+            'time wasting',  'tolerable',        'tolerant',       'triumphant',
+            'twisted',       'ugly',             'uncomfortable',  'unconscious', 'underhanded', 
+            'underwhelming', 'unhappy',          'unhealthy',      'unoriginal',
+            'uptight',       'useless',         'vital', 'wealthy',        'wholesome', 'worthless'
+      ]; 
+      // console.log(initlist.sort()); 
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
       console.log('modInitlist.length = ' + modInitlist.length);  
       return modInitlist[Math.floor(Math.random() * modInitlist.length)];             
@@ -167,20 +199,26 @@ const Words = class {
 
    // getNounWord -- this function returns a single value for noun & excludes certain values. 
    function getNounWord(excludeList) {
-      const initlist = ["work", "experience", "laziness", "elephant", "riding crop", "trombone", 
-      "profanity", "judgment", "screaming", "raincoat", "umbrella", 
-      "pajamas", "manifesto", "hairbrush", "ice cream sandwich", "remote control", 
-      "karaoke skills", "ventriloquist", "toothpaste", "trashcan", "medicine", 
-      "misdemeanors", "sabotage", "sanity", "madness", "confusion", 
-      "hand-washing", "jello shots", "pirate outfits", 
-      "sock puppets", "deodorant samples", "pterodactyl", "work ethic", 
-      "professionalism", "pillow talk", "brown paper bag", 
-      "toilet paper", "indecency", "Batman costume", "sequined scarf", 
-      "lab jacket", "magic beans", "bearhugs", "shadow", "lunchbox", 
-      "neck tattoos", "banjo playing", "glow-in-the-dark underwear", "lunchbox", 
-      "can-do attitude", "ambition"  
+      const initlist = [
+         'Batman costume',  'ambition',  'banjo playing',   'bearhugs',
+         'brown paper bag',    'can-do attitude',   'confusion',
+         'deodorant samples',   'elephant',  'experience',
+         'glow-in-the-dark underwear',  'hairbrush',   'hand-washing',
+         'ice cream sandwich',  'indecency',  'jello shots', 'juggling skills', 
+         'judgment',  'karaoke skills',   'lab jacket',
+         'laziness',  'lunchbox',   'lunchbox',
+         'madness',   'magic beans',   'manifesto',
+         'medicine',  'misdemeanors',   'neck tattoos',
+         'pajamas',   'pillow talk',    'pirate outfits',
+         'profanity',   'professionalism',    'pterodactyl',
+         'raincoat',    'remote control',    'riding crop',
+         'sabotage',    'sanity',    'screaming',
+         'sequined scarf',   'shadow',    'shotgun collection', 'sock puppets',
+         'toilet paper',   'toothpaste',    'trashcan',
+         'trombone',    'umbrella',    'ventriloquist',
+         'work',   'work ethic'  
    ]; 
-
+// console.log(initlist.sort()); 
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
       console.log('modInitlist.length = ' + modInitlist.length);  
       return modInitlist[Math.floor(Math.random() * modInitlist.length)];             
@@ -188,13 +226,31 @@ const Words = class {
 
    // getNounWord -- this function returns a single value for noun & excludes certain values. 
    function getNounPluralWord(excludeList) {
-      const initlist = ["computers", "clowns", "donkeys", "motorboats", "dishwater", "magazines", "bath towels", "television", 
-         "orangutans", "hammocks", "ice cubes", "underwear", "cat treats", "festivals", "wine", "Sesame Street", 
-      "snow blowers", "mail boxes", "staplers", "party hats", "shampoo commercials", "viking hats", "cheerleaders", 
-      "pancakes", "wheelbarrows", "squirrels", "enemas", "infestations", "witchcraft", "scarecrows", "rainbows", 
-      "origami", "snakes", "dark magic", "plungers", "showtunes", "trivia", "tv sitcoms", "spandex", "CPR", 
-      "overcoats"
+      const initlist = [
+            
+            'bath towels',    'candy canes', 'cat treats',
+            'cheerleaders',   'cigarettes',  'clowns',
+            'computers',      'CPR',    'dark magic',
+            'dishwater',      'donkeys',
+            'enemas',         'festivals',
+            'hammocks',       'historical outhouses',  'horror movies', 'ice cubes',
+            'infestations',   'insects',   'Instagram',
+            'lawn-mowers',    'magazines',
+            'mail boxes',     'motorboats',
+            'orangutans',     'origami',
+            'overcoats',      'pancakes',
+            'party hats',     'plungers',
+            'rainbows',       'scarecrows',  'Sesame Street',
+            'shampoo commercials',   'showtunes',
+            'snakes',        'snow blowers',
+            'spandex',       'squirrels',
+            'staplers',      'television',
+            'trivia',        'tv sitcoms',
+            'underwear',     'viking hats',
+            'wheelbarrows',  'wine',
+            'witchcraft'
       ]; 
+     
 
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
       console.log('modInitlist.length = ' + modInitlist.length);  
@@ -203,16 +259,30 @@ const Words = class {
 
    // getNounItemWord -- this function returns a single value for Noun Items & excludes certain values. 
    function getNounItemWord(excludeList) {
-      const initlist = ["resume", "doctor", "rooster", "laundry", "photograph", "leprechaun", "snowman", "bike shorts", 
-         "canteen", "hairnet", "Corn Flakes", "scissors", "toothbrush", "codpiece", "jester hat", "skateboard", 
-         "confession", "sandwich", "ransom note", "trading card", "leftovers", "toenail collection", "frisbee", 
-         "washcloth", "flyswatter", "shower curtain", "jigsaw puzzle", "clown shoes", "nosehair trimmer", 
-         "cornbread recipe", "Kermit the Frog action figure", "lucky pants", "hippopotamus", "hood ornament", 
-         "nightlight", "hunting knife", "gardening gloves", "mugshot", "socks", "references", "soccer trophy", 
-         "dental xrays", "favorite son's drawing", "bath towel", "bank records", "prom photos", 
-         "Christmas list", "screenplay", "Lego batmobile", "tennis shoes", "diary"
+      const initlist = [
+         'bank records',   'bath towel',   'bike shorts',   
+         'canteen',    'Christmas list',  'clown shoes',
+         'codpiece',    'confession',   'Corn Flakes bowl',
+         'cornbread recipe',    'dental xrays',    'diary',
+         'doctor',   "favorite son's drawing",   'flyswatter',  'frequent flyer number', 
+         'frisbee',   'gardening gloves',    'hairnet',
+         'hippopotamus',   'holiday plans', 'hood ornament',     'hunting knife',
+         'jester hat',   'jigsaw puzzle',    'Kermit the Frog action figure',
+         'laundry',     'leftovers',    'Lego batmobile',
+         'leprechaun', 'letter of recommendation', 'list of demands', 
+         'list of enemies', 'lucky underwear', 'mugshot',
+         'nightlight',    'nosehair trimmer',    
+         'prom photos',   'ransom note',   'references',
+         'resume',    'rooster',    'sandwich',  'sanity assessment', 
+         'scissors',    'screenplay',    'shower curtain',
+         'skateboard',    'snowman',   'soccer trophy',
+         'socks',    'tennis shoes',   'toenail clippers',
+         'toothbrush', 'trading card', 'washcloth', 
+         'yearbook photo'
       ]; 
 
+
+      
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
       console.log('modInitlist.length = ' + modInitlist.length);  
       return modInitlist[Math.floor(Math.random() * modInitlist.length)];             
