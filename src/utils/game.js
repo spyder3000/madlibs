@@ -5,7 +5,7 @@ const Game = class {
     constructor(dat) { 
         // Basic game setup 
       this.words = { ...dat}; 
-      console.log(this); 
+      // console.log(this); 
     } 
 
 /*    randTargetValue(currVal) {
@@ -17,10 +17,10 @@ const Game = class {
     }*/
 
     getWords() {
-      console.log('getWords called'); 
+      // console.log('getWords called'); 
       this.words = new Words({job: 2, adj: 8, verb: 1, noun: 1, nounplural: 1, nounitem: 1, indicators: ['adj03', 'adj05', 'adj06', 'adj08']})
-      console.log('return from words.js'); 
-      console.log(this.words); 
+      // console.log('return from words.js'); 
+      // console.log(this.words); 
       return this.words;
     }
 
