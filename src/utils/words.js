@@ -5,7 +5,7 @@ const Words = class {
         // Basic game setup 
       this.dat = {}; 
       this.wordtypes = { ...typ}; 
-      console.log(this.wordtypes); 
+      // console.log(this.wordtypes); 
       if (this.wordtypes.job) { this.getJobs(this.wordtypes.job); }
       if (this.wordtypes.noun) { this.getNouns(this.wordtypes.noun); }
       if (this.wordtypes.verb) { this.getVerbs(this.wordtypes.verb); }
@@ -13,13 +13,13 @@ const Words = class {
       if (this.wordtypes.nounplural) { this.getNounPlurals(this.wordtypes.nounplural); }
       if (this.wordtypes.adj) { this.getAdjs(this.wordtypes.adj); }
       if (this.wordtypes.indicators) { this.getIndicators(this.wordtypes.indicators); }
-      console.log(this.dat); 
+      // console.log(this.dat); 
       return this.dat; 
     } 
 
    getIndicators(ary) {
-      console.log('getIndicators'); 
-      console.log(ary); 
+      // console.log('getIndicators'); 
+      // console.log(ary); 
       var modcnt = ''; 
       for (let w = 0; w < ary.length; w++) { 
          modcnt = (w + 1).toString();  
@@ -128,7 +128,7 @@ const Words = class {
          ]; 
       
       let modJoblist = joblist.filter(item => !excludeList.includes(item)); 
-      console.log('modJoblist.length = ' + modJoblist.length);  
+      // console.log('modJoblist.length = ' + modJoblist.length);  
       return modJoblist[Math.floor(Math.random() * modJoblist.length)];             
    }
 
@@ -158,7 +158,7 @@ const Words = class {
       // console.log(initlist.sort());
       
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
-      console.log('modInitlist.length = ' + modInitlist.length);  
+      // console.log('modInitlist.length = ' + modInitlist.length);  
       return modInitlist[Math.floor(Math.random() * modInitlist.length)];             
    }
 
@@ -193,7 +193,7 @@ const Words = class {
       ]; 
       // console.log(initlist.sort()); 
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
-      console.log('modInitlist.length = ' + modInitlist.length);  
+      // console.log('modInitlist.length = ' + modInitlist.length);  
       return modInitlist[Math.floor(Math.random() * modInitlist.length)];             
    }
 
@@ -220,7 +220,7 @@ const Words = class {
    ]; 
 // console.log(initlist.sort()); 
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
-      console.log('modInitlist.length = ' + modInitlist.length);  
+      // console.log('modInitlist.length = ' + modInitlist.length);  
       return modInitlist[Math.floor(Math.random() * modInitlist.length)];             
    }
 
@@ -253,7 +253,7 @@ const Words = class {
      
 
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
-      console.log('modInitlist.length = ' + modInitlist.length);  
+      // console.log('modInitlist.length = ' + modInitlist.length);  
       return modInitlist[Math.floor(Math.random() * modInitlist.length)];             
    }
 
@@ -284,15 +284,15 @@ const Words = class {
 
       
       let modInitlist = initlist.filter(item => !excludeList.includes(item)); 
-      console.log('modInitlist.length = ' + modInitlist.length);  
+      // console.log('modInitlist.length = ' + modInitlist.length);  
       return modInitlist[Math.floor(Math.random() * modInitlist.length)];             
    }
 
    // getIndicatorWord -- this function returns a value of 'a' or 'an' depending on the input string. 
    function getIndicatorWord(val) {
-      console.log('word = ' + val); 
+      // console.log('word = ' + val); 
 		var first_letter = val.substring(0,1).toLowerCase(); 
-      console.log('letter = ' + first_letter)
+      // console.log('letter = ' + first_letter)
 		if (first_letter == 'a' || first_letter == 'e' || first_letter == 'i'
 			|| first_letter == 'o' || first_letter == 'u')  {
 			return "an"; }
