@@ -174,7 +174,7 @@ No media query since this is the default in Bootstrap */
    #letter_results {            /*  Styles specific to the Letter Simulator php page */
       padding: 5px 20px;	 
       height88: 61vh;
-      height: 38rem;
+      height: 36rem;
       font-size: 120%; 
    }
    #buttons input {    /* alignment for text boxes and dropdown boxes */
@@ -197,7 +197,7 @@ No media query since this is the default in Bootstrap */
    }
 }
 
-/* Extra (xl) large devices (large desktops, 1200px and up) */
+/* Extra (xl) large devices (large desktops, 1200px and up) - (here ipad horizontal) */
 @media (min-width: 1200px) { 
    #content_page { width: auto; }
    .container { max-width: 1140px; }
@@ -214,6 +214,7 @@ No media query since this is the default in Bootstrap */
    }
 }
 
+/* Extra (xl) large devices -- bigger than ipad horizontal */  
 @media (min-width: 1400px) { 
    /* #content_page { width: auto; }
    .container { max-width: 1140px; }

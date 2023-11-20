@@ -59,16 +59,16 @@ app.post('/begin', (req, res) => {
 
 app.post('/random', (req, res) => {
    if (!currGame) {
-      currGame = new Game(defaultWords);  
+      currGame = new Game(defaultWords);
       res.render('index', {
          currWords: currGame.words
       });    // allows us to render one of our views (one of the handlebar templates) 
+   } else {
+      // console.log('POST /random'); 
+      res.render('index', {
+         currWords: currGame.getWords()
+      });
    }
-   console.log('POST /random'); 
-   res.render('index', {
-      currWords: currGame.getWords()
-   });     
-
     // console.log(req.body); 
 
    //  res.render('index', {
